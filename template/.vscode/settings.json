@@ -1,0 +1,6 @@
+{
+    "files.associations": {
+        "*.cpp": "plaintext",
+        "*.hpp": "plaintext"
+    }
+}
