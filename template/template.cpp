@@ -7,6 +7,8 @@ using namespace std;
 // using namespace atcoder;
 
 using ll = long long;
+using ui = unsigned int;
+using ull = unsigned long long;
 
 const int INF = 1e9;
 // const ll INF = 1e18;
@@ -16,7 +18,7 @@ const ll MOD = 998244353;
 
 // modをとる
 template <typename T>
-void take_mod(T a, T m) {
+void take_mod(T& a, T m) {
     a += m;
     a %= m;
 }
@@ -37,6 +39,16 @@ void take_mod(T a, T m) {
 // 無向か有向か
 // 型を間違えない
 // グリッドで縦と横を逆にしない
+
+long long modpow(long long a, long long b, long long m) {
+    if (b == 0) return 1;
+    if (b % 2 == 0) {
+        long long x = modpow(a, b / 2, m);
+        return x * x % m;
+    }
+    long long x = modpow(a, b - 1, m);
+    return x * a % m;
+}
 
 int main() {
     ios::sync_with_stdio(false);
