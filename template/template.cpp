@@ -40,16 +40,6 @@ void take_mod(T& a, T m) {
 // 型を間違えない
 // グリッドで縦と横を逆にしない
 
-long long modpow(long long a, long long b, long long m) {
-    if (b == 0) return 1;
-    if (b % 2 == 0) {
-        long long x = modpow(a, b / 2, m);
-        return x * x % m;
-    }
-    long long x = modpow(a, b - 1, m);
-    return x * a % m;
-}
-
 int main() {
     ios::sync_with_stdio(false);
     cin.tie(nullptr);
