@@ -1,3 +1,6 @@
+// AC-Library Document:
+//  https://atcoder.github.io/ac-library/production/document_ja/index.html
+
 // Library: https://github.com/anchu1024/abc-library
 
 #include <bits/stdc++.h>
